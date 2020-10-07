@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 60%;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+.background--img{
+    position: absolute;
+    background-image: url("https://i.imgur.com/LHB0R6n.jpg");
+    animation: hue-rotate 15s linear infinite;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@keyframes hue-rotate {
+    from {
+        -webkit-filter: hue-rotate(0);
+        -moz-filter: hue-rotate(0);
+        -ms-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -ms-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+.gif--box {
+    position: relative;
+    height: 100vh;
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.gif--box .heading {
+    color: #ffffffd0;
+    font-size: 3.2rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.gif--box .img__gif {
+    height: 25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 3rem;
+    border-radius:5rem;
+}
+
+.gif--box .btn {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -22%);
+    background-color: #44f0f0a9;
+    padding: 1rem;
+    color: #ffffffd0;
+    font-size: 1.6em;
+    border-radius: 5rem;
+    transition: 0.4s all;
+    cursor: pointer;
+    font-weight: 800;
+}
